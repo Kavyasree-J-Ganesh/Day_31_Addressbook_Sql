@@ -21,18 +21,19 @@ Database changed
 
 ---Use Case 2---
 ---Ability to create a Address Book Table---
-mysql> create table addressbook(
-       id int not null auto_increment,
-       first_name varchar(30) not null ,
-       last_name varchar(30) not null ,
-       address varchar(30) not null ,
-       city varchar(30) not null ,
-       state varchar(30) not null ,
-       zip varchar(30) not null ,
-       phone_number varchar(15) not null ,
-       email varchar(30) not null ,
-       primary key(id)
-       );
+mysql>
+create table addressbook(
+id int not null auto_increment,
+first_name varchar(30) not null ,
+last_name varchar(30) not null ,
+address varchar(30) not null ,
+city varchar(30) not null ,
+state varchar(30) not null ,
+zip varchar(30) not null ,
+phone_number varchar(15) not null ,
+email varchar(30) not null ,
+primary key(id)
+);
 
 ---0 row(s) affected ---
 mysql> desc addressbook
@@ -49,6 +50,27 @@ zip	varchar(30)	NO
 phone_number	varchar(15)	NO
 email	varchar(30)	NO
 */
+
+---Use Case 3---
+---Ability to insert contact to addressBook---
+mysql>
+insert into addressbook(first_name,last_name,address,city,state,zip,phone_number,email)
+values("Kavya","Ganesh","Kollam","Quilandy","Kerala",'673307','9496107658','kavyasreejganesh97@gmail.com'),
+("Keerthana","Ganesh","Kollam","Quilandy","Kerala",'673307','9497778658','keerthanaganesh97@gmail.com'),
+("Jayasree","TM","Kollam","Quilandy","Kerala",'673305','9496107658','jayasreetm@gmail.com');
+
+/*
+3 row(s) affected Records: 3  Duplicates: 0  Warnings: 0
+*/
+
+mysql> select * from addressbook;
+
+/*
+1	Kavya	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	kavyasreejganesh97@gmail.com
+2	Keerthana	Ganesh	Kollam	Quilandy	Kerala	673307	9497778658	keerthanaganesh97@gmail.com
+3	Jayasree	TM	Kollam	Quilandy	Kerala	673305	9496107658	jayasreetm@gmail.com
+*/
+
 
 
 
