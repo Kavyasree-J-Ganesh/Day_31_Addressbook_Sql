@@ -227,3 +227,8 @@ mysql>select * from addressbook;
      5	Maggie	Family	pet	Kollam	Kochi	Karnataka	673307	9496107658	kavyasreejganesh97@gmail.com
      6	Julie	Friend	pet	Kollam	Kochi	Karnataka	673307	9496107658	kavyasreejganesh97@gmail.com
 */
+
+---Use Case 12---
+---Ability to Draw to ER diagram---
+
+Image link : "/img.png"
