@@ -144,3 +144,25 @@ mysql> select * from addressbook;
 2	Keerthana	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	keerthanaganesh97@gmail.com
 4	Keerthana	Ganesh	Kollam	Kochi	Karnataka	673307	9496107658	kavyasreejganesh97@gmail.com
 */
+
+
+---Use Case 8---
+---Ability to retrieve entries sorted alphabetically by Person’s name for a given city---
+
+mysql>
+select * from addressbook
+where city= "Quilandy"
+order by first_name;
+
+/*
+Kavya	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	kavyasreejganesh97@gmail.com
+Keerthana	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	keerthanaganesh97@gmail.com
+*/
+
+mysql> select * from addressbook;
+
+/*
+1	Kavya	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	kavyasreejganesh97@gmail.com
+2	Keerthana	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	keerthanaganesh97@gmail.com
+4	Keerthana	Ganesh	Kollam	Kochi	Karnataka	673307	9496107658	kavyasreejganesh97@gmail.com
+*/
