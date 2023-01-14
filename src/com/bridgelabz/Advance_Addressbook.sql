@@ -209,5 +209,28 @@ Keerthana	Family	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	keerthanaganesh
 Keerthana	Family	Ganesh	Kollam	Kochi	Karnataka	673307	9496107658	kavyasreejganesh97@gmail.com
 */
 
+---Use Case 11---
+---Ability to add person to both Friend and Family---
+
+mysql>
+insert into addressbook(first_name,type,last_name,address,city,state,zip,phone_number,email)
+values("Maggie", "Family", "pet","Kollam","Kochi","Karnataka",'673307','9496107658','kavyasreejganesh97@gmail.com');
+
+insert into addressbook(first_name,type,last_name,address,city,state,zip,phone_number,email)
+values("Julie", "Friend", "pet","Kollam","Kochi","Karnataka",'673307','9496107658','kavyasreejganesh97@gmail.com');
+
+mysql>select * from addressbook;
+/*
+     1	Kavya	Family	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	kavyasreejganesh97@gmail.com
+     2	Keerthana	Family	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	keerthanaganesh97@gmail.com
+     4	Keerthana	Family	Ganesh	Kollam	Kochi	Karnataka	673307	9496107658	kavyasreejganesh97@gmail.com
+     5	Maggie	Family	pet	Kollam	Kochi	Karnataka	673307	9496107658	kavyasreejganesh97@gmail.com
+     6	Julie	Friend	pet	Kollam	Kochi	Karnataka	673307	9496107658	kavyasreejganesh97@gmail.com
+*/
+
+---Use Case 12---
+---Ability to Draw to ER diagram---
+
+Image link : "/img.png"
 
 
