@@ -232,3 +232,8 @@ mysql>select * from addressbook;
 ---Ability to Draw to ER diagram---
 
 Image link : "/img.png"
+
+---Use Case 13---
+---Ensure all retrieve queries done especially in UC 6, UC 7, UC 8 and UC 10 are working with new table structure---
+
+Verified
