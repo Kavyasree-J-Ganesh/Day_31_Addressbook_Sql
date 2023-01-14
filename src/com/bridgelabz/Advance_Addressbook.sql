@@ -72,7 +72,7 @@ mysql> select * from addressbook;
 3	Jayasree	TM	Kollam	Quilandy	Kerala	673305	9496107658	jayasreetm@gmail.com
 */
 
----Use Case 3---
+---Use Case 4---
 ---Ability to edit contact using first_name---
 
 mysql>
@@ -232,3 +232,5 @@ mysql>select * from addressbook;
 ---Ability to Draw to ER diagram---
 
 Image link : "/img.png"
+
+
