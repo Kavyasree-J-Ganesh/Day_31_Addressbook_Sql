@@ -107,8 +107,8 @@ mysql> select * from addressbook;
 2	Keerthana	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	keerthanaganesh97@gmail.com
 */
 
----Use Case 5---
----Ability to delete contact using first_name---
+---Use Case 6---
+---Ability select contacts using city or state---
 
 mysql>
 select * from addressbook
