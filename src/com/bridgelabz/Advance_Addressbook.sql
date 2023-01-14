@@ -91,6 +91,42 @@ mysql> select * from addressbook;
 3	Jayasree	TM	Kollam	Quilandy	Kerala	673305	9496107658	jayasreetm@gmail.com
 */
 
+---Use Case 5---
+---Ability to delete contact using first_name---
+
+mysql> delete from addressbook where first_name = "Jayasree";
+
+/*
+1 row(s) affected
+*/
+
+mysql> select * from addressbook;
+
+/*
+1	Kavya	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	kavyasreejganesh97@gmail.com
+2	Keerthana	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	keerthanaganesh97@gmail.com
+*/
+
+---Use Case 6---
+---Ability select contacts using city or state---
+
+mysql>
+select * from addressbook
+where city= "Quilandy";
+
+/*
+1	Kavya	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	kavyasreejganesh97@gmail.com
+2	Keerthana	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	keerthanaganesh97@gmail.com
+*/
+
+mysql>
+select * from addressbook
+where state= "Kerala";
+
+/*
+1	Kavya	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	kavyasreejganesh97@gmail.com
+2	Keerthana	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	keerthanaganesh97@gmail.com
+*/
 
 
 
