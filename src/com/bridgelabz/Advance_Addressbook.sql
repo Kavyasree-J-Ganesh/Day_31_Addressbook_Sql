@@ -128,4 +128,19 @@ where state= "Kerala";
 2	Keerthana	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	keerthanaganesh97@gmail.com
 */
 
+---Use Case 7---
+---Ability get size of the addressbook using city or state---
 
+mysql> select count(*) from addressbook where city = "Kochi";
+
+/*
+1
+*/
+
+mysql> select * from addressbook;
+
+/*
+1	Kavya	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	kavyasreejganesh97@gmail.com
+2	Keerthana	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	keerthanaganesh97@gmail.com
+4	Keerthana	Ganesh	Kollam	Kochi	Karnataka	673307	9496107658	kavyasreejganesh97@gmail.com
+*/
