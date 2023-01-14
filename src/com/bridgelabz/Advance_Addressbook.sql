@@ -72,7 +72,7 @@ mysql> select * from addressbook;
 3	Jayasree	TM	Kollam	Quilandy	Kerala	673305	9496107658	jayasreetm@gmail.com
 */
 
----Use Case 3---
+---Use Case 4---
 ---Ability to edit contact using first_name---
 
 mysql>
@@ -237,3 +237,5 @@ Image link : "/img.png"
 ---Ensure all retrieve queries done especially in UC 6, UC 7, UC 8 and UC 10 are working with new table structure---
 
 Verified
+=======
+
