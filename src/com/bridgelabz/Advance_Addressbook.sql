@@ -53,6 +53,7 @@ email	varchar(30)	NO
 
 ---Use Case 3---
 ---Ability to insert contact to addressBook---
+
 mysql>
 insert into addressbook(first_name,last_name,address,city,state,zip,phone_number,email)
 values("Kavya","Ganesh","Kollam","Quilandy","Kerala",'673307','9496107658','kavyasreejganesh97@gmail.com'),
@@ -70,6 +71,26 @@ mysql> select * from addressbook;
 2	Keerthana	Ganesh	Kollam	Quilandy	Kerala	673307	9497778658	keerthanaganesh97@gmail.com
 3	Jayasree	TM	Kollam	Quilandy	Kerala	673305	9496107658	jayasreetm@gmail.com
 */
+
+---Use Case 4---
+---Ability to edit contact using first_name---
+
+mysql>
+update addressbook
+set phone_number = '9496107658' where first_name = "Keerthana";
+
+/*
+1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0
+*/
+
+mysql> select * from addressbook;
+
+/*
+1	Kavya	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	kavyasreejganesh97@gmail.com
+2	Keerthana	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	keerthanaganesh97@gmail.com
+3	Jayasree	TM	Kollam	Quilandy	Kerala	673305	9496107658	jayasreetm@gmail.com
+*/
+
 
 
 
