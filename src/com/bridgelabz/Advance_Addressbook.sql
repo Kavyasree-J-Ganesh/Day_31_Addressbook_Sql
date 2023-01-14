@@ -192,6 +192,22 @@ phone_number	varchar(15)	NO
 email	varchar(30)	NO
 */
 
+---Use Case 10---
+---Ability to get number of contact persons---
+
+mysql> select count(*) from addressbook where type="Family";
+
+/*
+3
+*/
+
+mysql>select * from addressbook;
+
+/*
+Kavya	Family	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	kavyasreejganesh97@gmail.com
+Keerthana	Family	Ganesh	Kollam	Quilandy	Kerala	673307	9496107658	keerthanaganesh97@gmail.com
+Keerthana	Family	Ganesh	Kollam	Kochi	Karnataka	673307	9496107658	kavyasreejganesh97@gmail.com
+*/
 
 
 
